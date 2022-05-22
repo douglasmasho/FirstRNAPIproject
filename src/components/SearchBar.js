@@ -6,7 +6,7 @@ const Searchbar = () => {
     return (
         <View style={styles.background}>
             <View style={styles.iconContainer}>
-            <Feather name="search" size={30}/>
+            <Feather name="search" style={styles.iconStyle}/>
             </View>
             <TextInput style={styles.textInput} placeholder="Search"/>
         </View>
@@ -34,11 +34,14 @@ const styles = StyleSheet.create({
     },
     textInput: {
         fontFamily: "Poppins_Regular",
-        paddingTop: 3,
         fontSize: 15,
         flex: 1,
         paddingRight: 8,
-        paddingLeft: 10
+        paddingLeft: 10,
+    },
+    iconStyle: {
+        fontSize: 35,
+        alignSelf: "center"
     }
 })
 
